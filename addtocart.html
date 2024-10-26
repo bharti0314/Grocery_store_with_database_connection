@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightgreen;
+            width: 250px;
+            height: 500px;
+            padding: 20px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <label for="name">product</label>
+    <input type="button" name="product" onclick="add('product')">
+    <label for="product1">product1</label>
+    <input type="button" name="product1" onclick="add('product1')" >
+    <div class="class1" id="cart">
+        total item - <b id="ti"></b>
+        <ol id="hello"></ol>
+    </div>
+</body>
+<script>
+    function add(val){
+        document.getElementById("hello").innerHTML += '<li>'+ val +'</li>';    
+        }
+</script>
+</html>
